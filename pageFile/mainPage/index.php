@@ -201,25 +201,25 @@
                         <h4 class="modal-title" id="myModalLabel2">Add Task</h4>
                     </div>
                     <div class="modal-body">
-                        <form id="PasswordChange" name="PasswordChange">
+                        <form id="PasswordChange" name="PasswordChange" method="post" action="changePw.php">
                             <div class="form-group">
                                 <label>Your Former Password:</label>
-                                <input type="text" class="form-control" id="formerPassword" name="formerPassword" placeholder="Former password">
+                                <input type="text" class="form-control" id="formerPassword" name="oldpw" placeholder="Former password">
                             </div>
                             <div class="form-group">
                                 <label>New Password:</label>
-                                <input type="text" class="form-control" id="newPassword" name="newPassword" placeholder="New Password">
+                                <input type="text" class="form-control" id="newPassword" name="pw" placeholder="New Password">
                             </div>
                             <div class="form-group">
                                 <label>New Password Again:</label>
-                                <input type="text" class="form-control" id="newPassword2" name="newPassword2" placeholder="New Password Again">
+                                <input type="text" class="form-control" id="newPassword2" name="repw" placeholder="New Password Again">
                             </div>
 
                         </form>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                        <button type="button" id="hoCoSubmit2"   data-dismiss="modal" class="btn btn-success">Submit</button>
+                        <button type="submit" id="hoCoSubmit2"   data-dismiss="modal" class="btn btn-success">Change Password</button>
                     </div>
                 </div>
             </div>
